@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200&family=Oxygen:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+.title {
+    color: rgb(113, 141, 12);
+    font-size: 40px;
+  font-family: 'Oxygen', sans-serif;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+
+}
+
+body {
+    background-color: black;
+
+}
+
+.button {
+  background-color: black;
+  border-color:  rgb(113, 141, 12);
+  font-size: 80px;
+  font-family: 'Cinzel', sans-serif;
+  color: rgb(113, 141, 12);
+  height: 100px;
+  width: 100px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translateY(-50%) translateX(-50%);
+  border-radius: 10px;
+  animation: animate 5s linear infinite;
+}
+
+
+@keyframes animate {
+    0% {
+        box-shadow: 0 0 0 0 rgba(124, 165, 12, 0.7), 0 0 0 0 rgba(124, 165, 12, 0.7);
+    }
+    40% {
+        box-shadow: 0 0 0 50px rgba(217, 255, 0, 0), 0 0 0 0 rgba(208, 255, 0, 0.7);
+    }
+    80% {
+        box-shadow: 0 0 0 50px rgba(166, 255, 0, 0), 0 0 0 30px rgba(200, 255, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(179, 255, 0, 0), 0 0 0 30px rgba(157, 255, 0, 0);
+    }
+}
